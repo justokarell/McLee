@@ -6,14 +6,16 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&display=swap" rel="stylesheet"><style>
 
-body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
+/* body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;} */
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Kreon', monospace;}
+
 #slideshow {
   width: 500pt;
-  height: 500pt;
+  height: 600pt;
   max-width: 500pt;
-  max-height: 500pt;
+  max-height: 600pt;
 }
 
 </style>
@@ -31,7 +33,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
   <div class="w3-bar-block" style="font-size: 1.8vw;">
     <a href="#slideshow" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>SLIDESHOW</a> 
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a href="#DJ" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-music fa-fw w3-margin-right"></i>DJ</a>
     <a href="#rates" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-dollar fa-fw w3-margin-right"></i>RATES</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-odnoklassniki fa-fw w3-margin-right"></i>ABOUT</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
@@ -52,7 +53,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
 
 <!-- Slideshow -->
 <div class="w3-content" id="slideshow">
-<h1 class="w3-center" style="font-size: 4.5vw;">4 STARS ART </h1>
+<h1 class="w3-center" style="font-size: 4.5vw;"><br>4 STARS ART </h1>
 <p class="w3-center" style="font-size: 1.5vw; ">Photography, Art, Video, and DJ'ing</p>
 
   <div class="w3-content w3-section" style="max-width:500px">
@@ -64,16 +65,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
   </div>
 </div>
 
-<br><br>
+<br><br><br>
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
+  <br><br><br>
 
   <!-- Header -->
   <header id="portfolio">
     <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b>Portfolio</b></h1>
+    <h1 style="font-size: 3.2vw;"><br>Portfolio</h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span> 
       <button class="w3-button w3-black" style="border-radius: 10pt;">ALL</button>
@@ -145,6 +147,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
     </div>
   </div>
 
+  <!-- About Me Section -->
+  <h1 id="contact" style="font-size: 3.2vw;"><br>ABOUT</h1>
+
   <!-- Images of Me -->
   <div class="w3-row-padding w3-padding-16" id="about">
     <div class="w3-col m6">
@@ -156,31 +161,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
   </div>
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
     <p> Photographer, Artist, DJ, and Drone Videographer born and raised in Stamford, CT. </p>
     <hr>
     
-    <h4>Technical Skills</h4>
-    <!-- Progress bars / Skills -->
-    <p>Photography</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
-    </div>
-    <p>Web Design</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
-    </div>
-    <p>Photoshop</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
-    </div>
-    <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Resume
-      </button>
-    </p>
+    
     <hr>
-    <h4 id="rates">How much I charge</h4>
+    <h4 id="rates" style="font-size: 3vw;"><br>RATES</h4>
+    <br>
     <!-- Pricing Tables -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third w3-margin-bottom"> 
@@ -238,14 +225,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
   
   <!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-black" style="border-radius: 15pt;">
-    <h1 id="contact" style="font-size: 4vw;"><b>Contact Me</b></h1>
+    <h1 id="contact" style="font-size: 3.2vw;"><br>Contact Me</h1>
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -10px; border-radius:10pt;">
-      <p style="font-size: 2vw;">Home</p>
-      <p style="font-size: 1.5vw;">Stamford, CT</p>
-      <p style="font-size: 2vw;">Email</p>
-      <p style="font-size: 1.5vw;">4starsart@gmail.com</p>
-      <p style="font-size: 2vw;">Phone</p>
-      <p style="font-size: 1.5vw;">+1 (203) 219-3754</p>
+      <p style="font-size: 2.5vw;">Stamford, CT</p>
+      <p style="font-size: 2.5vw;">4starsart@gmail.com</p>
+      <p style="font-size: 2.5vw;">+ 1 (203) 219-3754</p>
       </div>
     </div>
     <hr class="w3-opacity">
