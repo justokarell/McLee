@@ -11,16 +11,16 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
 
 </style>
-<body class="w3-white w3-content" style="max-width:1600px">
+<body class="w3-black w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-light-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h2><b>McLee J. Mathias</b></h2>
+    <img src="images/iconphoto.png" style="width:45%;" class="w3-round"><br><br>
+    <h2><b>Menu</b></h2>
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
@@ -42,6 +42,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
+
+<!-- Slideshow -->
+<h1 class="w3-center" style="font-size: 4.5vw;">4 Star Art </h1>
+<p class="w3-center" style="font-size: 1.5vw; ">Photography, Art, Video, and DJ'ing</p>
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="images/biopic.png" style="width:100%">
+  <img class="mySlides" src="images/iconphoto.png" style="width:100%">
+  <img class="mySlides" src="img_chicago.jpg" style="width:100%">
+</div>
+
+<br><br>
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
@@ -54,7 +67,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span> 
       <button class="w3-button w3-black" style="border-radius: 10pt;">ALL</button>
-      <button class="w3-button w3-light-grey" style="border-radius: 10pt;"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
       <button class="w3-button w3-light-grey w3-hide-small" style="border-radius: 10pt;"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
       <button class="w3-button w3-light-grey w3-hide-small" style="border-radius: 10pt;"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
     </div>
@@ -126,7 +138,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
   <!-- Images of Me -->
   <div class="w3-row-padding w3-padding-16" id="about">
     <div class="w3-col m6">
-      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+      <img src="images/biopic.png" alt="Me" style="width:100%">
     </div>
     <div class="w3-col m6">
       <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
@@ -135,7 +147,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
     <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of Title and mauris neque quam blog. I want to share my world with you. Item Description Item Description</p>
+    <p> Photographer, Artist, DJ, and Drone Videographer born and raised in Stamford, CT. </p>
     <hr>
     
     <h4>Technical Skills</h4>
@@ -215,20 +227,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
   </div>
   
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-grey" style="border-radius: 10pt;">
-    <h2 id="contact"><b>Contact Me</b></h2>
-    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px; border-radius:10pt;">
-      <div class="w3-third w3-dark-grey" style="border-radius: 10pt; margin: 4pt;">
-        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>email@email.com</p>
-      </div>
-      <div class="w3-third w3-teal" style="border-radius: 10pt; margin: -8pt;">
-        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Stamford, CT 06902</p>
-      </div>
-      <div class="w3-third w3-dark-grey" style="border-radius: 10pt; margin: 4pt;">
-        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-        <p>512312311</p>
+  <div class="w3-container w3-padding-large w3-black" style="border-radius: 15pt;">
+    <h1 id="contact" style="font-size: 4vw;"><b>Contact Me</b></h1>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -10px; border-radius:10pt;">
+      <p style="font-size: 2vw;">Home</p>
+      <p style="font-size: 1.5vw;">Stamford, CT</p>
+      <p style="font-size: 2vw;">Email</p>
+      <p style="font-size: 1.5vw;">4starsart@gmail.com</p>
+      <p style="font-size: 2vw;">Phone</p>
+      <p style="font-size: 1.5vw;">+1 (203) 219-3754</p>
       </div>
     </div>
     <hr class="w3-opacity">
@@ -262,7 +269,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;}
       <h3>BLOG POSTS</h3>
       <ul class="w3-ul w3-hoverable">
         <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <img src="images/biopic.png" class="w3-left w3-margin-right" style="width:50px">
           <span class="w3-large">Lorem</span><br>
           <span>Sed mattis nunc</span>
         </li>
@@ -305,6 +312,23 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 </script>
+
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
 
 </body>
 </html>
