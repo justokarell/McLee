@@ -65,15 +65,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Kreon', monospace;}
 <br><br><br>
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
-  <br><br><br>
 
   <!-- Header -->
   <header id="portfolio">
     <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1 style="font-size: 3.2vw;"><br>Portfolio</h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
+      <div class="w3-center"><p style="font-size: 4vw;">PORTFOLIO</p></div>
+      <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span> 
       <button class="w3-button w3-black" style="border-radius: 10pt;">ALL</button>
       <button class="w3-button w3-light-grey w3-hide-small" style="border-radius: 10pt;"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
@@ -145,7 +144,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Kreon', monospace;}
   </div>
 
   <!-- About Me Section -->
-  <h1 id="about" style="font-size: 3.2vw;"><br>ABOUT</h1>
+  <div class="w3-center"><p id="about" style="font-size: 4vw;">ABOUT</p></div>
 
   <!-- Images of Me -->
   <div class="w3-row-padding w3-padding-16">
@@ -157,19 +156,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Kreon', monospace;}
     </div>
   </div>
 
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px; font-size: 1.3vw;">
     <p> Photographer, Artist, DJ, and Drone Videographer born and raised in Stamford, CT. </p>
     <hr>
     
     
     <hr>
-    <h4 id="rates" style="font-size: 3vw;"><br>RATES</h4>
+    <div class="w3-center"><p id="rates" style="font-size: 4vw;">RATES</p></div>
     <br>
     <!-- Pricing Tables -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third w3-margin-bottom"> 
         <ul class="w3-ul w3-border w3-light-grey w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">Art</li>
+          <li class="w3-yellow w3-xlarge w3-padding-32">Art</li>
           <li class="w3-padding-16">Canvas</li>
           <li class="w3-padding-16">Photography</li>
           <li class="w3-padding-16">1GB Storage</li>
@@ -186,7 +185,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Kreon', monospace;}
       
       <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-light-grey w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-teal w3-xlarge w3-padding-32">Photography</li>
+          <li class="w3-red w3-xlarge w3-padding-32">Photography</li>
           <li class="w3-padding-16">Aerial/Drone Photography</li>
           <li class="w3-padding-16">Instagram</li>
           <li class="w3-padding-16">Headshots</li>
@@ -203,7 +202,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Kreon', monospace;}
       
       <div class="w3-third">
         <ul class="w3-ul w3-border w3-light-grey w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">DJ</li>
+          <li class="w3-purple w3-xlarge w3-padding-32">DJ</li>
           <li class="w3-padding-16">All equipment and setup included</li>
           <li class="w3-padding-16">etc.</li>
           <li class="w3-padding-16">etc.</li>
@@ -222,8 +221,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Kreon', monospace;}
   
   <!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-black" style="border-radius: 15pt;">
-    <h1 id="contact" style="font-size: 3.2vw;"><br>Contact</h1>
-    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -10px; border-radius:10pt;">
+    <div class="w3-center"><p id="contact" style="font-size: 4vw;">CONTACT</p></div>
+    <div class="w3-row-padding w3-center w3-padding-12" style="margin:0 0pt; border-radius:5pt;">
       <p style="font-size: 2.5vw;">Stamford, CT</p>
       <p style="font-size: 2.5vw;">4starsart@gmail.com</p>
       <p style="font-size: 2.5vw;">+ 1 (203) 219-3754</p>
@@ -293,7 +292,7 @@ function w3_close() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3200); // Change image every 3.2 seconds
+    setTimeout(carousel, 2000); // Change image every 2 seconds
   }
   </script>
 
