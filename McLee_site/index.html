@@ -5,45 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
 
 <style>
 
-/* body,h1,h2,h3,h4,h5,h6 {font-family: 'PT Mono', monospace;} */
-/* body,h1,h2,h3,h4,h5,h6 {font-family: 'Playfair Display', serif;} */
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
 
-#slideshow {
-  width: 500pt;
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Reenie Beanie', cursive;}
+
+#home {
+  width: 1000pt;
   height: 600pt;
-  max-width: 500pt;
-  max-height: 600pt;
+  padding-left: 150pt;
 }
 
 
 </style>
-<body class="w3-black w3-content" style="max-width:1600px">
+<body class="w3-white w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-green" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
     <!-- <img src="images/iconphoto.png" style="width:45%;" class="w3-round"><br><br> -->
-    <!-- <h2 style="font-size: 5.2vw;"><b>MENU</b></h2> -->
+    <!-- <h2 style="font-size: 4.2vw;"><b>MENU</b></h2> -->
   </div>
   <br><br><br>
-  <div class="w3-bar-block" style="font-size: 3.1vw;">
-    <a href="#slideshow" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>SLIDESHOW</a> 
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a href="#rates" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-dollar fa-fw w3-margin-right"></i>RATES</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-odnoklassniki fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  <div class="w3-bar-block" style="font-size: 4.5vw;">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+    <a href="#events" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-dollar fa-fw w3-margin-right"></i>EVENTS</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#rates" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-dollar fa-fw w3-margin-right"></i>RATES</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-odnoklassniki fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
 
   </div>
   
@@ -54,9 +52,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
 
 
 <!-- Slideshow -->
-<div class="w3-content" id="slideshow">
-<h1 class="w3-center" style="font-size: 5.8vw;">McLee Mathias</h1>
-<p class="w3-center" style="font-size: 1.5vw; ">Photography, Art, Video, and DJ'ing</p>
+<div class="w3-content" id="home">
+<h1 class="w3-center" style="font-size: 6.0vw;">McLee Mathias</h1>
+<p class="w3-center" style="font-size: 3.5vw; ">Photography - Art - Video - DJ'ing</p>
 
   <div class="w3-content w3-section" style="max-width:500px">
     <img class="mySlides" src="images/4STARSART-6.jpg" style="width:100%">
@@ -86,7 +84,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
       <div class="w3-center"><p style="font-size: 5vw;">PORTFOLIO</p></div>
       <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span> 
-      <button class="w3-button w3-black" style="border-radius: 10pt;">ALL</button>
+      <button class="w3-button w3-white" style="border-radius: 10pt;">ALL</button>
       <button class="w3-button w3-light-grey w3-hide-small" style="border-radius: 10pt;"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
       <button class="w3-button w3-light-grey w3-hide-small" style="border-radius: 10pt;"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
     </div>
@@ -146,12 +144,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
   <!-- Pagination -->
   <!-- <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">«</a>
+      <a href="#" class="w3-bar-item w3-white w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">»</a>
     </div>
   </div>  -->
   <!-- First Photo Grid-->
@@ -207,12 +205,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
   <!-- Pagination
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">«</a>
+      <a href="#" class="w3-bar-item w3-white w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">»</a>
     </div>
   </div>  -->
 
@@ -251,7 +249,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
             <span class="w3-opacity">per piece</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+            <button class="w3-button w3-teal w3-padding-large w3-hover-white">Sign Up</button>
           </li>
         </ul>
       </div>
@@ -260,7 +258,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
         <ul class="w3-ul w3-border w3-light-grey w3-center w3-opacity w3-hover-opacity-off">
           <li class="w3-brown w3-xlarge w3-padding-32">Photography</li>
           <li class="w3-padding-16">Aerial/Drone Photography</li>
-          <li class="w3-padding-16">Instagram</li>
+          <li class="w3-padding-16">Social Media</li>
           <li class="w3-padding-16">Headshots</li>
           <li class="w3-padding-16">Weddings</li>
           <li class="w3-padding-16">
@@ -268,7 +266,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
             <span class="w3-opacity">per hour</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+            <button class="w3-button w3-teal w3-padding-large w3-hover-white">Sign Up</button>
           </li>
         </ul>
       </div>
@@ -285,7 +283,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
             <span class="w3-opacity">per night</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+            <button class="w3-button w3-teal w3-padding-large w3-hover-white">Sign Up</button>
           </li>
         </ul>
       </div>
@@ -293,12 +291,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
   </div>
   
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-black" style="border-radius: 15pt;">
-    <div class="w3-center"><p id="contact" style="font-size: 5vw;"><b>CONTACT</b></p></div>
+  <div class="w3-container w3-padding-large w3-white" style="border-radius: 15pt;">
+    <div class="w3-center"><p id="contact" style="font-size: 6.5vw;"><b>CONTACT</b></p></div>
     <div class="w3-row-padding w3-center w3-padding-12" style="margin:0 0pt; border-radius:5pt;">
-      <p style="font-size: 2.5vw;">Stamford, CT</p>
-      <p style="font-size: 2.5vw;">4starsart@gmail.com</p>
-      <p style="font-size: 2.5vw;">+ 1 (203) 219-3754</p>
+      <p style="font-size: 4.5vw;">Stamford, CT</p>
+      <p style="font-size: 4.5vw;">4starsart@gmail.com</p>
+      <p style="font-size: 4.5vw;">+ 1 (203) 219-3754</p>
     </div>
     </div>
     <hr class="w3-opacity">
@@ -320,7 +318,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-black">
+  <footer class="w3-container w3-padding-32 w3-white">
   <div class="w3-row-padding">
     <div class="w3-third">
       <h3>FOOTER</h3>
@@ -334,7 +332,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Crimson Text', serif;}
   </div>
   </footer>
   
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-white w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 <!-- End page content -->
 </div>
