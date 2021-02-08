@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>page4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Reenie Beanie', cursive;}
+
+#home {
+  width: 1000pt;
+  height: 600pt;
+  padding-left: 150pt;
+}
+
+</style>
+
+
+<body class="w3-white w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-green" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <!-- <img src="images/iconphoto.png" style="width:45%;" class="w3-round"><br><br> -->
+    <!-- <h2 style="font-size: 4.2vw;"><b>MENU</b></h2> -->
+  </div>
+  <br><br><br>
+  <div class="w3-bar-block" style="font-size: 4.5vw;">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+    <a href="#events" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-dollar fa-fw w3-margin-right"></i>EVENTS</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#rates" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-dollar fa-fw w3-margin-right"></i>RATES</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-odnoklassniki fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-black"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+
+  </div>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Slideshow -->
+<div class="w3-content" id="home">
+<h1 class="w3-center" style="font-size: 6.0vw;">PAGE 4</h1>
+<p class="w3-center" style="font-size: 3.5vw; ">Want to play a game?</p>
+
+  <div class="w3-content w3-section" style="max-width:900px">
+  <form name="login" style="margin: 20px 20px 20px 20px;">
+  <input class="main" type="text" name="pass" size="64" onkeydown="if(event.keyCode==13) document.getElementById('codebtn').click()" style="width: 230px;" onkeyup="return forceLower(this);"><br>
+  <div id="spacer20"></div>
+  <input class="main" type="button" id="codebtn" value="Submit" onclick="javascript:TheLogin(this.form)">
+  </form>
+  </div>
+</div>
+
+<br><br><br>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px"></div>
+  
+</footer>
+  
+<div class="w3-white w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+
+  function TheLogin() {
+    var password = 'beyond';
+    if (this.document.login.pass.value == password) {
+      top.location.href = "final.html";
+    } else {
+      window.alert("INCORRECT PASSWORD. ACCESS DENIED.");
+    }
+  }
+  
+  function forceLower(strInput) {
+    strInput.value = strInput.value.toLowerCase();
+  }
+
+</script>
+
+</body>
+</html>
+
