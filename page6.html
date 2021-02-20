@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>page5</title>
+<title>page6</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -65,16 +65,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Roboto Mono', monospace; background-color:
 
 <!-- Slideshow -->
 <div class="w3-content" id="home">
-<h1 class="w3-center" style="font-size: 6.0vw; color: white;">Agent 40</h1>
-<p class="w3-center" style="font-size: 3.5vw; color: white; ">Clue 5</p>
+<h1 class="w3-center" style="font-size: 6.0vw; color: white;">page 6</h1>
+<p class="w3-center" style="font-size: 3.5vw; color: white; ">page 6</p>
 
-  <div class="w3-content w3-section" style="max-width:900px">
-  <form name="login" style="margin: 20px 20px 20px 20px;">
-  <input class="main" id="main" type="text" name="pass" size="64" onkeydown="if(event.keyCode==13) document.getElementById('codebtn').click()" style="width: 230px;" onkeyup="return forceLower(this);"><br>
-  <div id="spacer20"></div>
-  <input class="main" type="button" id="codebtn" value="Submit" onclick="javascript:TheLogin(this.form)">
-  </form>
-  </div>
+
 </div>
 
 <br><br><br>
@@ -121,14 +115,7 @@ function w3_close() {
     setTimeout(carousel, 2000); // Change image every 2 seconds
   }
 
-  function TheLogin() {
-    var password = 'gopherbroke';
-    if (this.document.login.pass.value == password) {
-      window.location.href = "http://127.0.0.1:5500/page6.html";
-    } else {
-      window.alert("INCORRECT PASSWORD. ACCESS DENIED.");
-    }
-  }
+ 
   
   function forceLower(strInput) {
     strInput.value = strInput.value.toLowerCase();
